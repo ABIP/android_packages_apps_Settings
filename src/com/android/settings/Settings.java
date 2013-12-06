@@ -92,7 +92,6 @@ import com.android.settings.cyanogenmod.ButtonSettings;
 import com.android.settings.cyanogenmod.LockscreenInterface;
 import com.android.settings.cyanogenmod.NavBar;
 import com.android.settings.cyanogenmod.NavRing;
-import com.android.settings.cyanogenmod.PerformanceSettings;
 import com.android.settings.cyanogenmod.NotificationDrawer;
 import com.android.settings.cyanogenmod.superuser.PolicyNativeFragment;
 import com.android.settings.deviceinfo.Memory;
@@ -487,7 +486,6 @@ public class Settings extends PreferenceActivity
         NotificationDrawer.class.getName(),
         ButtonSettings.class.getName(),
         ProfilesSettings.class.getName(),
-        PerformanceSettings.class.getName(),
         PolicyNativeFragment.class.getName(),
         com.android.settings.cyanogenmod.PrivacySettings.class.getName(),
         com.android.settings.quicksettings.QuickSettingsTiles.class.getName(),
@@ -1413,4 +1411,5 @@ public class Settings extends PreferenceActivity
     public static class ThemeSettingsActivity extends Settings { /* empty */ }
     public static class WifiApSettingsActivity extends Settings { /* empty */ }
     public static class LockscreenInterfaceActivity extends Settings { /* empty */ }
+    public static class PerformanceSettingsActivity extends Settings { /* empty */ }
 }
