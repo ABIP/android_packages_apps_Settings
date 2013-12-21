@@ -21,16 +21,19 @@
     <!-- Status bar settings -->
     <PreferenceScreen
         android:key="status_bar"
-        android:icon="@drawable/ic_settings_system"
         android:fragment="com.android.settings.cyanogenmod.StatusBar"
         android:title="@string/status_bar_title" />
 
     <!-- Dynamic system bars -->
     <PreferenceScreen
         android:id="@+id/dynamic_system_bar"
-        android:icon="@drawable/ic_settings_dsb"
         android:fragment="com.android.settings.batik.DSBSettings"
         android:title="@string/dynamic_system_bars_title" />
 
+    <!-- Screen recorder -->
+    <PreferenceScreen
+        android:key="screen_recorder"
+        android:title="@string/screen_recorder_title"
+        android:fragment="com.android.settings.batik.ScreenRecorderSettings" />
 
 </PreferenceScreen>
