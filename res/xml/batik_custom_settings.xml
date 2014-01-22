@@ -30,5 +30,10 @@
         android:fragment="com.android.settings.batik.DSBSettings"
         android:title="@string/dynamic_system_bars_title" />
 
+    <!-- Recent Panel Settings -->
+    <PreferenceScreen
+        android:key="recents_panel"
+        android:fragment="com.android.settings.batik.RecentsPanelSettings"
+        android:title="@string/recents_panel_settings_title" />
 
 </PreferenceScreen>
