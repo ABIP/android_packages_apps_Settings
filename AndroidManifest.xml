@@ -129,6 +129,7 @@
         <!-- This is manifest from us -->
         <activity android:name=".batik.DSBSettings" />
         <activity android:name=".batik.CustomSettings" />
+        <activity android:name=".batik.NotificationDrawerStyle" />
 
         <!-- Only system/su can open this activity -->
         <!-- This activity will then call the MultitaskSuRequestActivity to create a new task stack -->
