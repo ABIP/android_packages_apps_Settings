@@ -130,6 +130,7 @@
         <activity android:name=".batik.DSBSettings" />
         <activity android:name=".batik.CustomSettings" />
         <activity android:name=".batik.NotificationDrawerStyle" />
+        <activity android:name=".batik.CarrierLabel" />
 
         <!-- Only system/su can open this activity -->
         <!-- This activity will then call the MultitaskSuRequestActivity to create a new task stack -->
