@@ -1411,4 +1411,5 @@ public class Settings extends PreferenceActivity
     public static class WifiApSettingsActivity extends Settings { /* empty */ }
     public static class LockscreenInterfaceActivity extends Settings { /* empty */ }
     public static class PerformanceSettingsActivity extends Settings { /* empty */ }
+    public static class ASSRamBarActivity extends Settings { /* empty */ }
 }
