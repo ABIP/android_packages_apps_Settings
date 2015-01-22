@@ -19,4 +19,8 @@
     <!-- About phone screen, Free memory info -->
     <string name="mem_info">Memory</string>
 
+    <!-- Devices and Maintainers -->
+    <string name="device_maintainers_title">Devices and Maintainers</string>
+    <string name="device_maintainers_title_summary">List of devices and their crDroid ROM maintainers</string>
+
 </resources>
