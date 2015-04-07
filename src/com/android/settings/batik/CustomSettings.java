@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.crdroid;
+package com.android.settings.batik;
 
 import android.os.Bundle;
 import android.preference.Preference;
@@ -31,7 +31,7 @@ public class CustomSettings extends SettingsPreferenceFragment implements OnPref
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.custom_settings);
+        addPreferencesFromResource(R.xml.batik_custom_settings);
     }
 
     @Override
