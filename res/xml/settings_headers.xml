@@ -110,7 +110,7 @@
 
     <!-- Custom settings -->
     <header
-        settings:includeXmlForSearch="@xml/custom_settings"
+        settings:includeXmlForSearch="@xml/batik_custom_settings"
         android:id="@+id/custom_settings"
         android:icon="@drawable/ic_settings_system"
         android:fragment="com.android.settings.batik.CustomSettings"

@@ -152,4 +152,7 @@
     <string name="power_menu_onthego_title">On-The-Go Mode</string>
     <string name="power_menu_onthego_summary">Show the camera overlay under all windows</string>
 
+    <!-- Performance Control -->
+    <string name="performance_settings">Performance Control</string>
+
 </resources>
