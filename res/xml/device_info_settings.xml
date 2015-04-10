@@ -17,6 +17,9 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/about_settings">
 
+
+        <PreferenceScreen android:key="batik_logo"
+                android:layout="@layout/batik_logo" />
         <!-- Devices and Maintainers -->
         <PreferenceScreen
                 android:key="devices"
