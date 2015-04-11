@@ -772,9 +772,9 @@ public class Settings extends PreferenceActivity
                     }
                 }
             } else if (id == R.id.development_settings
-                    || id == R.id.performance_settings) {
+                    || id == R.id.performance_controls) {
                 boolean removePreference = !showDev;
-                if (!removePreference && id == R.id.performance_settings) {
+                if (!removePreference && id == R.id.performance_controls) {
                     final Resources res = getResources();
                     removePreference = res.getBoolean(R.bool.config_hidePerformanceSettings);
                 }

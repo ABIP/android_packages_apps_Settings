@@ -58,7 +58,6 @@ public class DeviceInfoSettings extends RestrictedSettingsFragment {
     private static final String KEY_TERMS = "terms";
     private static final String KEY_LICENSE = "license";
     private static final String KEY_COPYRIGHT = "copyright";
-    private static final String KEY_SYSTEM_UPDATE_SETTINGS = "system_update_settings";
     private static final String PROPERTY_URL_SAFETYLEGAL = "ro.url.safetylegal";
     private static final String PROPERTY_SELINUX_STATUS = "ro.build.selinux";
     private static final String KEY_KERNEL_VERSION = "kernel_version";
@@ -184,20 +183,6 @@ public class DeviceInfoSettings extends RestrictedSettingsFragment {
                 Utils.UPDATE_PREFERENCE_FLAG_SET_TITLE_TO_MATCHING_ACTIVITY);
         Utils.updatePreferenceToSpecificActivityOrRemove(act, parentPreference, KEY_TEAM,
                 Utils.UPDATE_PREFERENCE_FLAG_SET_TITLE_TO_MATCHING_ACTIVITY);
-
-        // These are contained by the root preference screen
-        parentPreference = getPreferenceScreen();
-        if (UserHandle.myUserId() == UserHandle.USER_OWNER) {
-            Utils.updatePreferenceToSpecificActivityOrRemove(act, parentPreference,
-                    KEY_SYSTEM_UPDATE_SETTINGS,
-                    Utils.UPDATE_PREFERENCE_FLAG_SET_TITLE_TO_MATCHING_ACTIVITY);
-            /* Make sure the activity is provided by who we want... */
-            if (findPreference(KEY_SYSTEM_UPDATE_SETTINGS) != null)
-                removePreferenceIfPackageNotInstalled(findPreference(KEY_SYSTEM_UPDATE_SETTINGS));
-        } else {
-            // Remove for secondary users
-            removePreference(KEY_SYSTEM_UPDATE_SETTINGS);
-        }
 
         Utils.updatePreferenceToSpecificActivityOrRemove(act, parentPreference, KEY_CONTRIBUTORS,
                 Utils.UPDATE_PREFERENCE_FLAG_SET_TITLE_TO_MATCHING_ACTIVITY);
