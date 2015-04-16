@@ -21,7 +21,7 @@
 
     <PreferenceCategory
             android:key="category_recent_panel"
-            android:title="@string/recents_clear_all_button"/>
+            android:title="recents clear all button"/>
 
     <CheckBoxPreference
             android:key="recent_menu_clear_all"
